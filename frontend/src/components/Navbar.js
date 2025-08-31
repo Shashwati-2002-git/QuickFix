@@ -1,5 +1,6 @@
 import React from "react";
 import { User } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
@@ -14,16 +15,16 @@ const Navbar = () => {
       </div>
 
       {/* Center: Title */}
-      <h1 className="text-5xl font-bold text-center">QuickFix</h1>
+      <h1 className="text-8xl font-bold text-center">QuickFix</h1>
 
       {/* Right: Profile + Sign in */}
       <div className="flex items-center space-x-4">
         <div className="h-12 w-12 bg-white text-blue-800 rounded-full flex items-center justify-center">
           <User size={28} />
         </div>
-        <a href="/signin" className="text-lg hover:underline">
-          Sign in
-        </a>
+        <Link to="/Login" className="text-lg hover:underline">
+          Sign In
+        </Link>
       </div>
     </nav>
   );
