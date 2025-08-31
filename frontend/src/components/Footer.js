@@ -11,10 +11,12 @@ const Footer = () => {
           {/* Company Info */}
           <div className="col-span-1 md:col-span-2">
             <div className="flex items-center space-x-2 mb-4">
-              <div className="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-lg">C</span>
-              </div>
-              <span className="text-xl font-bold">ComplEase</span>
+              <img
+                src="/logo192.png"   // replace with your logo image path
+                alt="QuickFix Logo"
+                className="h-8 w-8"
+              />
+              <span className="text-xl font-bold">QuickFix</span>
             </div>
             <p className="text-gray-300 mb-4 max-w-md">
               Your comprehensive complaint management solution. We make it easy to submit, 
@@ -109,7 +111,7 @@ const Footer = () => {
         {/* Bottom Section */}
         <div className="border-t border-gray-700 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
           <div className="text-gray-300 mb-4 md:mb-0">
-            <p>&copy; {currentYear} ComplEase. All rights reserved.</p>
+            <p>&copy; {currentYear} QuickFix. All rights reserved.</p>
           </div>
           <div className="flex space-x-6">
             <a href="#" className="text-gray-300 hover:text-white transition-colors text-sm">
